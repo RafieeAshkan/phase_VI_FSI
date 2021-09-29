@@ -1,0 +1,90 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+10
+(
+    outlet
+    {
+        type            patch;
+        nFaces          1566;
+        startFace       2242066;
+    }
+    inlet
+    {
+        type            patch;
+        nFaces          1566;
+        startFace       2243632;
+    }
+    top
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          4590;
+        startFace       2245198;
+    }
+    blade_one
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          4896;
+        startFace       2249788;
+    }
+    blade_two
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          4896;
+        startFace       2254684;
+    }
+    hub
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          864;
+        startFace       2259580;
+    }
+    i_tip_one
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1440;
+        startFace       2260444;
+    }
+    i_tip_two
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1440;
+        startFace       2261884;
+    }
+    blade_one_tip
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          288;
+        startFace       2263324;
+    }
+    blade_two_tip
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          288;
+        startFace       2263612;
+    }
+)
+
+// ************************************************************************* //
